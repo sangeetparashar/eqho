@@ -1,0 +1,53 @@
+
+h1 {
+	font-size: 1.5em;
+	margin: 0;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+body {
+	font-family: Avenir-Heavy;
+	color: #4A4A4A;
+}
+
+
+/* Messages List */
+#messages-list {
+	padding: 1em 1em 1em 1em;
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+/* Messages */
+#message-container {
+	background: #B8E986;
+	border-radius: 4px;
+	width: 100%;
+}
+
+#user-name {
+	color: #4A4A4A;
+	display: inline;
+	padding: 0.25em 0.25em 0.25em 0.25em; 
+}
+
+#user-image {
+	display: inline;
+	border-radius: 10px;
+}
+
+.message-body {
+	background: red;
+}
+
