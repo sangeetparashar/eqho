@@ -17,37 +17,27 @@ body {
 
 
 /* Messages List */
-#messages-list {
-	padding: 1em 1em 1em 1em;
-	display: flex;
+.messages-list {
+	padding: 1em 0 1em 0;
 	vertical-align: middle;
 	align-items: center;
 }
 
 .container {
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 50em;
 }
 
 /* Messages */
-#message-container {
-	background: #B8E986;
+.message-container {
+	background: #dddddd;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 1em 1em 1em 1em;
 	border-radius: 4px;
+}
+
+.message-input input {
+
 	width: 100%;
 }
-
-#user-name {
-	color: #4A4A4A;
-	display: inline;
-	padding: 0.25em 0.25em 0.25em 0.25em; 
-}
-
-#user-image {
-	display: inline;
-	border-radius: 10px;
-}
-
-.message-body {
-	background: red;
-}
-

@@ -5,9 +5,9 @@ export default class Message extends Component {
   render() {
     return (
 
-      		<div id="message-container">
+      		<div className="message-container">
       			<div id="user-image">
-      				place
+
       			</div>
 
       			<div id="user-name">
@@ -18,8 +18,6 @@ export default class Message extends Component {
       				{this.props.message.text}
       			</div>
       		</div>
-      	
-
     );
   }
 }
