@@ -40,11 +40,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="wrapper">
         <header>
-          <div className="channel-control">
+          <div className="header-control">
             <div className="logo-container">
-              <p> hello world</p>
+            
             </div>
 
             <div className="channel-container">
@@ -52,28 +52,36 @@ class App extends Component {
             </div>
           
           </div>
-        </header>
  
-          <div className="messages-list">
-           {this.renderMessages()}
+        </header>
+
+        <div className="container">
+            <div className="messages-list">
+             {this.renderMessages()}
+             </div>
          </div>
 
-         <div className="expression-control">
-            <div className="expressive-panel">
+       <div className="input-container">
 
+            <div className="expressive-container">
+                <div className="expressive-panel">
+
+                </div>
+
+                <div className="message-input">
+                  <form className="new-msg" onSubmit={this.handleSubmit.bind(this)}>
+                    <input 
+                      type="text"
+                      ref="textInput"
+                      placeholder="The letters go here"
+                      />
+                      <i className="material-icons">done</i>
+                    </form>
+
+
+                </div>
             </div>
-
-            <div className="message-input">
-              <form className="new-msg" onSubmit={this.handleSubmit.bind(this)}>
-                <input 
-                  type="text"
-                  ref="textInput"
-                  placeholder="The letters go here"
-                  />
-                </form>
-            </div>
-         </div>
-
+        </div> 
       </div>
     );
   }
