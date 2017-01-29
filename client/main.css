@@ -27,7 +27,7 @@ body {
 /* Messages */
 
 .messages-list {
-	padding-top: 1em;
+	padding-top: 5em;
 	width: 100%;
 }
 
@@ -39,6 +39,13 @@ body {
 .input-container {
 	padding: 2em 5em 2em 5em;
 }
+
+/* Navigation */
+
+nav {
+	background: white;
+}
+
 
 /* Expressive */
 

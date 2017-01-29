@@ -48,17 +48,24 @@ class App extends Component {
     return (
 
       <div  className="wrapper">
-       <nav>
-        <div class="nav-wrapper">
-         <a href="#" className="brand-logo">eqho</a>
-             {this.renderChannels()}
+        <div className="navbar-fixed">
+          <nav className="nav-extended">
+            <div class="nav-wrapper">
+             <a href="#" className="brand-logo center grey-text text-darken-4">eqho</a>
+             <br/>
+              <div className="nav-content">
+                {this.renderChannels()}
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
 
       <div className="container">
 
         <div className="messages-list">
+          <ul className="collection">
               {this.renderMessages()} 
+          </ul>
         </div>
 
          <div className="input-container">

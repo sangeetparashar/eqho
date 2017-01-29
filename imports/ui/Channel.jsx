@@ -4,12 +4,11 @@ import React, { Component, PropTypes } from 'react';
 export default class Channel extends Component {
   render() {
     return (
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><a href="#">Hello channel 1</a></li>
-          <li><a href="#">Hello channel 2</a></li>
-          <li><a href="#">Hello channel 3</a></li>
-        </ul>
-    	
+      <ul className="tabs">
+          <li className="tab"><a href="#" className="grey-text text-darken-4">+Hello channel 1</a></li>
+          <li className="tab"><a href="#" className="grey-text text-darken-4">+Hello channel 2</a></li>
+          <li className="tab"><a href="#" className="grey-text text-darken-4">+Hello channel 3</a></li>
+      </ul>
     );
   }
 }
