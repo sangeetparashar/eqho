@@ -9,31 +9,25 @@ export default class Message extends Component {
 
   render() {
     return (
+          <div className="message">
+          <div id="user-image">
 
-      		<div className="valign-wrapper">
+          </div>
 
-            <div className="message-container valign">
+          <div id="user-name">
+          {this.props.message.user}
+          </div>
 
-        			<div id="user-image">
+          <div className="message-body">
+          {this.props.message.text}
 
-        			</div>
+          </div>
+          <a id="delete-msg-icon" href="#">
+          <i 
+          className="material-icons right"
+          onClick={this.deleteThisMessage.bind(this)}>close</i>
 
-        			<div id="user-name">
-        				{this.props.message.user}
-        			</div>
-
-        			<div className="message-body">
-        				{this.props.message.text}
-
-        			</div>
-                <a id="delete-msg-icon" href="#">
-                    <i 
-                    className="material-icons right"
-                     onClick={this.deleteThisMessage.bind(this)}>close</i>
-              
-                </a>
-                    
-              </div>
+          </a>
           </div>
     );
   }

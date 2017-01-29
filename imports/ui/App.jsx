@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
 import { Messages } from '../api/messages.js';
 import Message from './Message.jsx';
- 
+import Channel from './Channel.jsx';
+import ExpressivePanel from './ExpressivePanel.jsx';
+
 // App component - represents the whole app
 class App extends Component {
 
@@ -30,7 +32,11 @@ class App extends Component {
   }
 
   renderChannels() {
-    return ;
+    return <Channel/>;
+  }
+
+  renderExpressives() {
+    return <ExpressivePanel/>;
   }
  
 
@@ -40,48 +46,40 @@ class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <header>
-          <div className="header-control">
-            <div className="logo-container">
-            
-            </div>
 
-            <div className="channel-container">
-              {this.renderChannels()}
-            </div>
-          
-          </div>
- 
-        </header>
+      <div  className="wrapper">
+       <nav>
+        <div class="nav-wrapper">
+         <a href="#" className="brand-logo">eqho</a>
+             {this.renderChannels()}
+        </div>
+      </nav>
 
-        <div className="container">
-            <div className="messages-list">
-             {this.renderMessages()}
-             </div>
-         </div>
+      <div className="container">
 
-       <div className="input-container">
+        <div className="messages-list">
+              {this.renderMessages()} 
+        </div>
 
-            <div className="expressive-container">
-                <div className="expressive-panel">
+         <div className="input-container">
+              <div className="expressive-container">
+                  <div className="expressive-panel center">
+                    {this.renderExpressives()}
+                  </div>
 
-                </div>
-
-                <div className="message-input">
-                  <form className="new-msg" onSubmit={this.handleSubmit.bind(this)}>
-                    <input 
-                      type="text"
-                      ref="textInput"
-                      placeholder="The letters go here"
-                      />
-                      <i className="material-icons">done</i>
-                    </form>
-
-
-                </div>
-            </div>
-        </div> 
+                  <div className="message-input">
+                    <form className="new-msg" onSubmit={this.handleSubmit.bind(this)}>
+                      <input 
+                        type="text"
+                        ref="textInput"
+                        placeholder="The letters go here"
+                        />
+                        <i className="material-icons">done</i>
+                      </form>
+                  </div>
+              </div>
+          </div> 
+        </div>
       </div>
     );
   }
