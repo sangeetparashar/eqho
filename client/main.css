@@ -1,0 +1,75 @@
+
+h1 {
+	font-size: 1.5em;
+	margin: 0;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+body {
+	font-family: Avenir-Heavy;
+	color: #4A4A4A;
+}
+.container {
+	margin: 0 auto;
+	max-width: 50em;
+}
+
+
+#delete-msg-icon {
+	color: #3d3d3d;
+}
+
+/* Messages */
+
+.messages-list {
+	padding-top: 5em;
+	width: 100%;
+}
+
+.message {
+	width: 100%;
+	padding: 0.5em;
+}
+
+.input-container {
+	padding: 2em 5em 2em 5em;
+}
+
+/* Navigation */
+
+nav {
+	background: white;
+}
+
+
+/* Expressive */
+
+input {
+	outline: thin;
+}
+
+i.expressive {
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+
+/* Navigation and Channels */
+
+/* Lists */
+ul.inline {
+	list-style: none;
+}
+
+.inline li {
+	display: inline;
+}
+
+
+
+
